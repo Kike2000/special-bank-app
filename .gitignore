@@ -42,5 +42,10 @@ next-env.d.ts
 
 .vercel
 
-SpecialBankBackend/bin/Debug/net8.0/
+SpecialBankBackend/bin/
+SpecialBankBackend/obj/
+SpecialBankBackend/.vs/
 
+# Ignorar archivos de configuración específicos
+SpecialBankBackend/appsettings.Development.json
+SpecialBankBackend/appsettings.Local.json
