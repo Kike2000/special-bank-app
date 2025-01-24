@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "sQEVEuFAFN1ZvGw42djI/Zp9/7RFCpxg2yqrx60Ic5n6OdbrFtO+qWE0sIF+PpFVNCnTjRewyhyHPE9bZbm6dQ==",
+  "dgSpecHash": "L7xAvK6slqtXHcvt75lg+wPY4GuJHDP8oHRg4F5EpPPR1IlmsED+K8npJaVcpfucAYMAulSETVNdo8xHLlkwVw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\pedro\\source\\repos\\SpecialBankAPI\\SpecialBankAPI.csproj",
+  "projectFilePath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\SpecialBankAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pedro\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\pedro\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
