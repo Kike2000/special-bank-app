@@ -10,13 +10,12 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Await params before using its properties
-  const { locale } = await params;
+  const { locale } = params;
 
   if (!routing.locales.includes(locale as "en" | "es")) {
     notFound();
   }
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
 
   return (
     <html lang={locale}>
