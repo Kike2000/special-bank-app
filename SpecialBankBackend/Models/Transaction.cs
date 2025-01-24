@@ -7,6 +7,11 @@ namespace SpecialBankAPI.Models
     [Table("Transactions")]
     public class Transaction
     {
+        public Transaction () 
+        {
+            TransactionUniqueReference = $"{Guid.NewGuid().ToString().Replace("-", "").Substring(1, 27)}";
+        }   
+
         [Key]
         public int Id { get; set; }
         public string TransactionUniqueReference { get; set; }

@@ -5188,11 +5188,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pedro\\source\\repos\\SpecialBankAPI\\SpecialBankAPI.csproj",
+      "projectUniqueName": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\SpecialBankAPI.csproj",
       "projectName": "SpecialBankAPI",
-      "projectPath": "C:\\Users\\pedro\\source\\repos\\SpecialBankAPI\\SpecialBankAPI.csproj",
+      "projectPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\SpecialBankAPI.csproj",
       "packagesPath": "C:\\Users\\pedro\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pedro\\source\\repos\\SpecialBankAPI\\obj\\",
+      "outputPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\pedro\\AppData\\Roaming\\NuGet\\NuGet.Config",
