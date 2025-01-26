@@ -1,22 +1,44 @@
 [
   {
-    "ContainingType": "SpecialBankAPI.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
+    "Method": "Authenticate",
+    "RelativePath": "api/v3/Account/Authenticate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "authenticateModel",
+        "Type": "SpecialBankAPI.Models.AuthenticateModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
+    "Method": "CreateNewAccount",
+    "RelativePath": "api/v3/Account/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "newAccountModel",
+        "Type": "SpecialBankAPI.Models.CreateNewAccountModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
+    "Method": "GetAllAccounts",
+    "RelativePath": "api/v3/Account/Update",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[SpecialBankAPI.WeatherForecast, SpecialBankAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
+    "ReturnTypes": []
   }
 ]
