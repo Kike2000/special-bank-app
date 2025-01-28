@@ -27,9 +27,9 @@ namespace SpecialBankAPI.Services.Implementations
             }
             return true;
         }
-        public async Task<Account> Authenticate(string AccountNumber, string Pin)
+        public Account Authenticate(string AccountNumber, string Pin)
         {
-            var account =await _specialBankDbContext.Account.Where(x=>x.AccountNumberGenerated == AccountNumber).SingleOrDefaultAsync();
+            var account =_specialBankDbContext.Account.Where(x=>x.AccountNumberGenerated == AccountNumber).SingleOrDefault();
             if (account == null)
                 return null;
             if (!VerifyPinHash(Pin, account.PinHash, account.PinSalt))
@@ -37,7 +37,7 @@ namespace SpecialBankAPI.Services.Implementations
             return account;
         }
 
-        public async Task<Account> CreateAccount(Account account, string Pin, string ConfirmPin)
+        public Account CreateAccount(Account account, string Pin, string ConfirmPin)
         {
             if (_specialBankDbContext.Account.Any(x => x.Email == account.Email)) throw new ApplicationException("An account already existing with this email!");
             if (!Pin.Equals(ConfirmPin)) throw new ArgumentException("The pins don't match", "Pin");
@@ -46,18 +46,18 @@ namespace SpecialBankAPI.Services.Implementations
             CreatePin(Pin, out pinHash, out pinSalt);
             account.PinHash= pinHash;
             account.PinSalt = pinSalt;
-            var newAccount = _specialBankDbContext.Account.AddAsync(account);
-            await _specialBankDbContext.SaveChangesAsync();
+            var newAccount = _specialBankDbContext.Account.Add(account);
+            _specialBankDbContext.SaveChanges();
             return account;
         }
 
-        public async void DeleteAccount(int Id)
+        public void DeleteAccount(int Id)
         {
             var account = _specialBankDbContext.Account.Find(Id);
             if (account == null)
             {
                 _specialBankDbContext.Account.Remove(account);
-                await _specialBankDbContext.SaveChangesAsync();
+                _specialBankDbContext.SaveChanges();
             }
         }
 
@@ -90,7 +90,7 @@ namespace SpecialBankAPI.Services.Implementations
 
         public void UpdateAccount(Account account, string Pin = null)
         {
-            var accountUpdated = _specialBankDbContext.Account.Where(p=>p.Email == account.Email).SingleOrDefault();
+            var accountUpdated = _specialBankDbContext.Account.Where(p=>p.AccountNumberGenerated == account.AccountNumberGenerated).SingleOrDefault();
             if (accountUpdated == null) throw new ApplicationException("Account doesn't exist");
             if (!string.IsNullOrWhiteSpace(account.Email))
             {
@@ -112,7 +112,7 @@ namespace SpecialBankAPI.Services.Implementations
             }
             accountUpdated.LastUpdatedDate = DateTime.UtcNow;
             _specialBankDbContext.Account.Update(accountUpdated);
-            _specialBankDbContext.SaveChangesAsync();
+            _specialBankDbContext.SaveChanges();
         }
     }
 }

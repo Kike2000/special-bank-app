@@ -34,11 +34,59 @@
   {
     "ContainingType": "SpecialBankAPI.Controllers.AccountController",
     "Method": "GetAllAccounts",
-    "RelativePath": "api/v3/Account/Update",
+    "RelativePath": "api/v3/Account/GetAll",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
+    "Method": "GetByAccountId",
+    "RelativePath": "api/v3/Account/GetByAccountId",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
+    "Method": "GetByAccountNumber",
+    "RelativePath": "api/v3/Account/GetByAccountNumber",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
+    "Method": "UpdateAccount",
+    "RelativePath": "api/v3/Account/UpdateAccount",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "updateAccountModel",
+        "Type": "SpecialBankAPI.Models.UpdateAccountModel",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   }
 ]

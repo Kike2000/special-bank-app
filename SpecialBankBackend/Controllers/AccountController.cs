@@ -4,6 +4,7 @@ using SpecialBankAPI.Data;
 using SpecialBankAPI.Models;
 using SpecialBankAPI.Services.Interfaces;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace SpecialBankAPI.Controllers
 {
@@ -28,7 +29,7 @@ namespace SpecialBankAPI.Controllers
             return Ok(_accountService.CreateAccount(account, newAccountModel.Pin, newAccountModel.ConfirmPin));
         }
         [HttpGet]
-        [Route("Update")]
+        [Route("GetAll")]
         public IActionResult GetAllAccounts() 
         {
             var accounts = _accountService.GetAllAccounts();
@@ -41,6 +42,32 @@ namespace SpecialBankAPI.Controllers
         {
             if (!ModelState.IsValid) { return BadRequest(authenticateModel); }
             return Ok(_accountService.Authenticate(authenticateModel.AccountNumber, authenticateModel.Pin));
+        }
+        [HttpGet]
+        [Route("GetByAccountNumber")]
+        public IActionResult GetByAccountNumber(string accountNumber)
+        {
+            if (!Regex.IsMatch(accountNumber, @"^[0][1-9]\d{9}$|^[1-9]\d{9}$")) return BadRequest("Account nust be 10 digits");
+            var account = _accountService.GetAccountByAccountNumber(accountNumber);
+            var mappedAccount = _mapper.Map<GetAccountModel>(account);
+            return Ok(mappedAccount);
+        }
+        [HttpGet]
+        [Route("GetByAccountId")]
+        public IActionResult GetByAccountId(int Id)
+        {
+            var account = _accountService.GetAccountById(Id);
+            var mappedAccount = _mapper.Map<GetAccountModel>(account);
+            return Ok(mappedAccount);
+        }
+        [HttpPut]
+        [Route("UpdateAccount")]
+        public IActionResult UpdateAccount([FromBody] UpdateAccountModel updateAccountModel)
+        {
+            if (!ModelState.IsValid) { return BadRequest(updateAccountModel); }
+            var account = _mapper.Map<Account>(updateAccountModel);
+            _accountService.UpdateAccount(account, updateAccountModel.Pin);
+            return Ok(account);
         }
     }
 }

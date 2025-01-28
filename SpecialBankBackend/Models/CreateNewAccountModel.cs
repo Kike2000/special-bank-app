@@ -12,10 +12,10 @@ namespace SpecialBankAPI.Models
         public DateTime? CreatedDate { get; set; }
         public DateTime? LastUpdatedDate { get; set; }
         [Required]
-        [RegularExpression(@"^[0-9]\d{4}$", ErrorMessage ="Pin must not be more than 4 digits")]
+        [RegularExpression(@"^[0-9]{4}$", ErrorMessage ="Pin must not be more than 4 digits")]
         public string Pin {  get; set; }
         [Required]
-        [RegularExpression("Pin",ErrorMessage = "Pin don't match")]
+        [Compare("Pin",ErrorMessage = "Pins don't match")]
         public string ConfirmPin { get; set; }
     }
 }
