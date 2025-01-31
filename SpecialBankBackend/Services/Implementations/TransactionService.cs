@@ -91,7 +91,7 @@ namespace SpecialBankAPI.Services.Implementations
             transaction.TransactionDate = DateTime.Now;
             transaction.TransactionParticulars = $"New transaction from source: {JsonConvert.SerializeObject(transaction.TransactionSourceAccount)} to destination account: " +
                 $"{JsonConvert.SerializeObject(transaction.TransactionDestinationAccount)} on date: {transaction.TransactionDate} for amount: {JsonConvert.SerializeObject(transaction.TransactionAmount)} " +
-                $"transaction type: {JsonConvert.SerializeObject(transaction.TransactionType)} and transaction status: {JsonConvert.SerializeObject(transaction.TransactionStatus)}";
+                $"transaction type: {transaction.TransactionType} and transaction status: {transaction.TransactionStatus}";
             _specialBankDbContext.Transaction.Add( transaction );
             _specialBankDbContext.SaveChanges();
             return response;
@@ -99,12 +99,106 @@ namespace SpecialBankAPI.Services.Implementations
 
         public Response MakeFundsTransfer(string FromAccount, string ToAccount, decimal Amount, string TransactionPin)
         {
-            throw new NotImplementedException();
+            Response response = new Response();
+            Account sourceAccount;
+            Account destinationAccount;
+            Transaction transaction = new Transaction();
+
+            var authUser = _accountService.Authenticate(FromAccount, TransactionPin);
+            if (authUser == null) throw new ApplicationException("Invalid credentials");
+
+            try
+            {
+                sourceAccount = _accountService.GetAccountByAccountNumber(FromAccount);
+                destinationAccount = _accountService.GetAccountByAccountNumber(ToAccount);
+
+                sourceAccount.CurrentAccountBalance -= Amount;
+                destinationAccount.CurrentAccountBalance += Amount;
+
+                if ((_specialBankDbContext.Entry(sourceAccount).State == Microsoft.EntityFrameworkCore.EntityState.Modified) &&
+                    (_specialBankDbContext.Entry(destinationAccount).State == Microsoft.EntityFrameworkCore.EntityState.Modified))
+                {
+                    transaction.TransactionStatus = TransactionStatus.Success;
+                    response.ResponseCode = "00";
+                    response.ResponseMessage = "Succesful Deposit";
+                    response.Data = null;
+                }
+                else
+                {
+                    transaction.TransactionStatus = TransactionStatus.Failed;
+                    response.ResponseCode = "00";
+                    response.ResponseMessage = "Succesful Deposit";
+                    response.Data = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error has occurred: {ex.Message}");
+            }
+            transaction.TransactionType = TransactionType.Transfer;
+            transaction.TransactionSourceAccount = FromAccount;
+            transaction.TransactionDestinationAccount = ToAccount;
+            transaction.TransactionAmount = Amount;
+            transaction.TransactionDate = DateTime.Now;
+            transaction.TransactionParticulars = $"New transaction from source: {JsonConvert.SerializeObject(transaction.TransactionSourceAccount)} to destination account: " +
+                $"{JsonConvert.SerializeObject(transaction.TransactionDestinationAccount)} on date: {transaction.TransactionDate} for amount: {JsonConvert.SerializeObject(transaction.TransactionAmount)} " +
+                $"transaction type: {transaction.TransactionType} and transaction status: {transaction.TransactionStatus}";
+            _specialBankDbContext.Transaction.Add(transaction);
+            _specialBankDbContext.SaveChanges();
+            return response;
         }
 
         public Response MakeWithdrawal(string AccountNumber, decimal Amount, string TransactionPin)
         {
-            throw new NotImplementedException();
+            //make deposit 
+            Response response = new Response();
+            Account sourceAccount;
+            Account destinationAccount;
+            Transaction transaction = new Transaction();
+
+            var authUser = _accountService.Authenticate(AccountNumber, TransactionPin);
+            if (authUser == null) throw new ApplicationException("Invalid credentials");
+
+            try
+            {
+                sourceAccount = _accountService.GetAccountByAccountNumber(AccountNumber);
+                destinationAccount = _accountService.GetAccountByAccountNumber(_specialBankSettlementAccount);
+
+                sourceAccount.CurrentAccountBalance -= Amount;
+                destinationAccount.CurrentAccountBalance += Amount;
+
+                if ((_specialBankDbContext.Entry(sourceAccount).State == Microsoft.EntityFrameworkCore.EntityState.Modified) &&
+                    (_specialBankDbContext.Entry(destinationAccount).State == Microsoft.EntityFrameworkCore.EntityState.Modified))
+                {
+                    transaction.TransactionStatus = TransactionStatus.Success;
+                    response.ResponseCode = "00";
+                    response.ResponseMessage = "Succesful Deposit";
+                    response.Data = null;
+                }
+                else
+                {
+                    transaction.TransactionStatus = TransactionStatus.Failed;
+                    response.ResponseCode = "00";
+                    response.ResponseMessage = "Succesful Deposit";
+                    response.Data = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                _logger.LogError($"An error has occurred: {ex.Message}");
+            }
+            transaction.TransactionType = TransactionType.Withdrawal;
+            transaction.TransactionSourceAccount = AccountNumber;
+            transaction.TransactionDestinationAccount = _specialBankSettlementAccount ;
+            transaction.TransactionAmount = Amount;
+            transaction.TransactionDate = DateTime.Now;
+            transaction.TransactionParticulars = $"New transaction from source: {JsonConvert.SerializeObject(transaction.TransactionSourceAccount)} to destination account: " +
+                $"{JsonConvert.SerializeObject(transaction.TransactionDestinationAccount)} on date: {transaction.TransactionDate} for amount: {JsonConvert.SerializeObject(transaction.TransactionAmount)} " +
+                $"transaction type: {transaction.TransactionType}  and transaction status:  {transaction.TransactionStatus}";
+            _specialBankDbContext.Transaction.Add(transaction);
+            _specialBankDbContext.SaveChanges();
+            return response;
         }
     }
 }
+ 

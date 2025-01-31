@@ -88,5 +88,104 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpecialBankAPI.Controllers.TransactionController",
+    "Method": "CreateNewTransaction",
+    "RelativePath": "api/v3/Transaction/Create",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "transactionRequest",
+        "Type": "SpecialBankAPI.Models.TransactionRequestDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpecialBankAPI.Controllers.TransactionController",
+    "Method": "MakeDeposit",
+    "RelativePath": "api/v3/Transaction/MakeDeposit",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "transactionPin",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpecialBankAPI.Controllers.TransactionController",
+    "Method": "MakeFundsTransfer",
+    "RelativePath": "api/v3/Transaction/MakeFundsTransfer",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "fromAccount",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "toAccount",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "transactionPin",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SpecialBankAPI.Controllers.TransactionController",
+    "Method": "MakeWithDrawal",
+    "RelativePath": "api/v3/Transaction/MakeWithDrawal",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "accountNumber",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "amount",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "transactionPin",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

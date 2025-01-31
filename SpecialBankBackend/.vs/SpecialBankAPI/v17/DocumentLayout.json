@@ -3,56 +3,36 @@
   "WorkspaceRootPath": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\services\\implementations\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:services\\implementations\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\models\\updateaccountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:models\\updateaccountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\services\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:services\\interfaces\\itransactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:appsettings.local.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\services\\implementations\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:services\\implementations\\accountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\services\\implementations\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:services\\implementations\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\models\\authenticatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:models\\authenticatemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:controllers\\transactioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:models\\account.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\models\\createnewaccountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:models\\createnewaccountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\services\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:services\\interfaces\\iaccountservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\models\\transactionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:models\\transactionrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\profiles\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|solutionrelative:profiles\\automapperprofiles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{81F4AEEF-6F33-4CCF-B7D1-BD1B85B831ED}|SpecialBankAPI.csproj|c:\\users\\pedro\\onedrive\\documentos\\github\\special-bank-app\\specialbankbackend\\models\\getaccountmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -70,19 +50,84 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-31T04:36:00.437Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.Local.json",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.Local.json",
+              "RelativeDocumentMoniker": "appsettings.Local.json",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.Local.json",
+              "RelativeToolTip": "appsettings.Local.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-31T04:35:59.776Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "ITransactionService.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Services\\Interfaces\\ITransactionService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\ITransactionService.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Services\\Interfaces\\ITransactionService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\ITransactionService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABJAAAA",
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-01-31T04:35:56.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AutomapperProfiles.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Profiles\\AutomapperProfiles.cs",
+              "RelativeDocumentMoniker": "Profiles\\AutomapperProfiles.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Profiles\\AutomapperProfiles.cs",
+              "RelativeToolTip": "Profiles\\AutomapperProfiles.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA8AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T03:44:12.724Z",
+              "WhenOpened": "2025-01-31T04:23:29.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TransactionRequestDTO.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\TransactionRequestDTO.cs",
+              "RelativeDocumentMoniker": "Models\\TransactionRequestDTO.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\TransactionRequestDTO.cs",
+              "RelativeToolTip": "Models\\TransactionRequestDTO.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABBAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T04:21:46.925Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAABZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-26T04:10:41.387Z",
               "EditorCaption": ""
             },
             {
@@ -99,163 +144,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
+              "Title": "TransactionController.cs",
+              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Controllers\\TransactionController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TransactionController.cs",
+              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Controllers\\TransactionController.cs",
+              "RelativeToolTip": "Controllers\\TransactionController.cs",
+              "ViewState": "AQIAABkAAAAAAAAAAAAAADcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-31T04:19:37.692Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "TransactionService.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Services\\Implementations\\TransactionService.cs",
               "RelativeDocumentMoniker": "Services\\Implementations\\TransactionService.cs",
               "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Services\\Implementations\\TransactionService.cs",
               "RelativeToolTip": "Services\\Implementations\\TransactionService.cs",
-              "ViewState": "AQIAAFQAAAAAAAAAAAAAAGAAAAAcAAAA",
+              "ViewState": "AQIAAKYAAAAAAAAAAAAAAMsAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-28T03:31:15.726Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Account.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\Account.cs",
-              "RelativeDocumentMoniker": "Models\\Account.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\Account.cs",
-              "RelativeToolTip": "Models\\Account.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAqwB4AAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T03:54:12.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-26T04:13:44.631Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "appsettings.Local.json",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.Local.json",
-              "RelativeDocumentMoniker": "appsettings.Local.json",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.Local.json",
-              "RelativeToolTip": "appsettings.Local.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-28T03:14:11.619Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "UpdateAccountModel.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\UpdateAccountModel.cs",
-              "RelativeDocumentMoniker": "Models\\UpdateAccountModel.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\UpdateAccountModel.cs",
-              "RelativeToolTip": "Models\\UpdateAccountModel.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAwwA8AAAAfAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T03:51:02.134Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAwAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-26T04:13:47.457Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Controllers\\AccountController.cs",
-              "RelativeDocumentMoniker": "Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Controllers\\AccountController.cs",
-              "RelativeToolTip": "Controllers\\AccountController.cs",
-              "ViewState": "AQIAADQAAAAAAAAAAAAtwD0AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T03:55:29.821Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AccountService.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Services\\Implementations\\AccountService.cs",
-              "RelativeDocumentMoniker": "Services\\Implementations\\AccountService.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Services\\Implementations\\AccountService.cs",
-              "RelativeToolTip": "Services\\Implementations\\AccountService.cs",
-              "ViewState": "AQIAAGAAAAAAAAAAAAD4v3MAAAAIAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T05:52:44.375Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "AuthenticateModel.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\AuthenticateModel.cs",
-              "RelativeDocumentMoniker": "Models\\AuthenticateModel.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\AuthenticateModel.cs",
-              "RelativeToolTip": "Models\\AuthenticateModel.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-28T03:05:26.302Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "CreateNewAccountModel.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\CreateNewAccountModel.cs",
-              "RelativeDocumentMoniker": "Models\\CreateNewAccountModel.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\CreateNewAccountModel.cs",
-              "RelativeToolTip": "Models\\CreateNewAccountModel.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAA5wA4AAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T03:44:26.096Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "IAccountService.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Services\\Interfaces\\IAccountService.cs",
-              "RelativeDocumentMoniker": "Services\\Interfaces\\IAccountService.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Services\\Interfaces\\IAccountService.cs",
-              "RelativeToolTip": "Services\\Interfaces\\IAccountService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAoAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T05:17:45.245Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAIBJwCEAAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T04:10:41.387Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "GetAccountModel.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\GetAccountModel.cs",
               "RelativeDocumentMoniker": "Models\\GetAccountModel.cs",
@@ -263,12 +178,11 @@
               "RelativeToolTip": "Models\\GetAccountModel.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-26T03:54:02.918Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-26T03:54:02.918Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 9,
               "Title": "Response.cs",
               "DocumentMoniker": "C:\\Users\\pedro\\OneDrive\\Documentos\\GitHub\\special-bank-app\\SpecialBankBackend\\Models\\Response.cs",
               "RelativeDocumentMoniker": "Models\\Response.cs",
@@ -276,8 +190,7 @@
               "RelativeToolTip": "Models\\Response.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAoAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-24T05:49:49.73Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-24T05:49:49.73Z"
             }
           ]
         }
