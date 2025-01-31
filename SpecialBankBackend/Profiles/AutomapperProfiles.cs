@@ -10,6 +10,7 @@ namespace SpecialBankAPI.Profiles
             CreateMap<CreateNewAccountModel, Account>();
             CreateMap<UpdateAccountModel, Account>(); 
             CreateMap<Account, GetAccountModel>();
+            CreateMap<TransactionRequestDTO, Transaction>();
         }
     }
 }
