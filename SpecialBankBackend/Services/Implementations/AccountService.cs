@@ -1,4 +1,5 @@
-﻿using SpecialBankAPI.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SpecialBankAPI.Data;
 using SpecialBankAPI.Models;
 using SpecialBankAPI.Services.Interfaces;
 using System.Text;
@@ -11,51 +12,72 @@ namespace SpecialBankAPI.Services.Implementations
         public AccountService(SpecialBankDbContext specialBankDbContext)
         {
             _specialBankDbContext = specialBankDbContext;
-        } 
-        public Account Authenticate(string AccountNumber, string Pin)
-        {
-            throw new NotImplementedException();
         }
 
-        public async Task<Account> CreateAccount(Account account, string Pin, string ConfirmPin)
+        private static bool VerifyPinHash(string Pin, byte[] pinHash, byte[] pinSalt)
+        {
+            if (string.IsNullOrWhiteSpace(Pin)) throw new ArgumentNullException("Pin");
+            using (var hmac = new System.Security.Cryptography.HMACSHA512(pinSalt))
+            {
+                var computedPinHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(Pin));
+                for(int i =0; i< computedPinHash.Length; i++)
+                {
+                    if (computedPinHash[i] != pinHash[i]) return false;
+                }
+            }
+            return true;
+        }
+        public Account Authenticate(string AccountNumber, string Pin)
+        {
+            var account =_specialBankDbContext.Account.Where(x=>x.AccountNumberGenerated == AccountNumber).SingleOrDefault();
+            if (account == null)
+                return null;
+            if (!VerifyPinHash(Pin, account.PinHash, account.PinSalt))
+                return null;
+            return account;
+        }
+
+        public Account CreateAccount(Account account, string Pin, string ConfirmPin)
         {
             if (_specialBankDbContext.Account.Any(x => x.Email == account.Email)) throw new ApplicationException("An account already existing with this email!");
             if (!Pin.Equals(ConfirmPin)) throw new ArgumentException("The pins don't match", "Pin");
 
             byte[] pinHash, pinSalt;
             CreatePin(Pin, out pinHash, out pinSalt);
-            var newAccount = _specialBankDbContext.Account.AddAsync(new Models.Account
-            {
-                FirstName = "Pedro",
-                LastName = "Carrillo",
-                Email = "pedro@gmail.com",
-                PinHash = pinHash,
-                PinSalt = pinSalt,
-                PhoneNumber = "1234567890",
-                CreatedDate = DateTime.UtcNow,
-            });
-            await _specialBankDbContext.SaveChangesAsync();
+            account.PinHash= pinHash;
+            account.PinSalt = pinSalt;
+            var newAccount = _specialBankDbContext.Account.Add(account);
+            _specialBankDbContext.SaveChanges();
             return account;
         }
 
         public void DeleteAccount(int Id)
         {
-            throw new NotImplementedException();
+            var account = _specialBankDbContext.Account.Find(Id);
+            if (account == null)
+            {
+                _specialBankDbContext.Account.Remove(account);
+                _specialBankDbContext.SaveChanges();
+            }
         }
 
-        public Account GetAccountByAccountNumber(int AccountNumber)
+        public Account GetAccountByAccountNumber(string AccountNumber)
         {
-            throw new NotImplementedException();
+            var account = _specialBankDbContext.Account.FirstOrDefault(x => x.AccountNumberGenerated == AccountNumber);
+            if (account == null) return null;
+            return account;
         }
 
         public Account GetAccountById(int Id)
         {
-            throw new NotImplementedException();
+            var account = _specialBankDbContext.Account.FirstOrDefault(x => x.Id == Id);
+            if (account == null) return null;
+            return account;
         }
 
         public IEnumerable<Account> GetAllAccounts()
         {
-            throw new NotImplementedException();
+            return _specialBankDbContext.Account.ToList();
         }
         private static void CreatePin(string pin, out byte[] pinHash, out byte[] pinSalt)
         {
@@ -64,6 +86,33 @@ namespace SpecialBankAPI.Services.Implementations
                 pinSalt = hmac.Key;
                 pinHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(pin));
             }
+        }
+
+        public void UpdateAccount(Account account, string Pin = null)
+        {
+            var accountUpdated = _specialBankDbContext.Account.Where(p=>p.AccountNumberGenerated == account.AccountNumberGenerated).SingleOrDefault();
+            if (accountUpdated == null) throw new ApplicationException("Account doesn't exist");
+            if (!string.IsNullOrWhiteSpace(account.Email))
+            {
+                if (_specialBankDbContext.Account.Any(x => x.Email == account.Email)) throw new ApplicationException($"This email {account.Email} already exists.");
+                accountUpdated.Email = account.Email;
+            }
+
+            if (!string.IsNullOrWhiteSpace(account.PhoneNumber))
+            {
+                if (_specialBankDbContext.Account.Any(x => x.PhoneNumber == account.PhoneNumber)) throw new ApplicationException($"This phone number {account.Email} already exists.");
+                accountUpdated.PhoneNumber = account.PhoneNumber;
+            }
+            if (!string.IsNullOrWhiteSpace(Pin))
+            {
+                byte[] pinHash, pinSalt;
+                CreatePin(Pin, out pinHash, out pinSalt);
+                accountUpdated.PinHash = pinHash;
+                accountUpdated.PinSalt = pinSalt;
+            }
+            accountUpdated.LastUpdatedDate = DateTime.UtcNow;
+            _specialBankDbContext.Account.Update(accountUpdated);
+            _specialBankDbContext.SaveChanges();
         }
     }
 }
