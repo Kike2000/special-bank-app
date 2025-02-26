@@ -1,191 +1,22 @@
 [
   {
-    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
-    "Method": "Authenticate",
-    "RelativePath": "api/v3/Account/Authenticate",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "authenticateModel",
-        "Type": "SpecialBankAPI.Models.AuthenticateModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
-    "Method": "CreateNewAccount",
-    "RelativePath": "api/v3/Account/Create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "newAccountModel",
-        "Type": "SpecialBankAPI.Models.CreateNewAccountModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
-    "Method": "GetAllAccounts",
-    "RelativePath": "api/v3/Account/GetAll",
+    "ContainingType": "SpecialBankAPI.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
-    "Method": "GetByAccountId",
-    "RelativePath": "api/v3/Account/GetByAccountId",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
+    "ReturnTypes": [
       {
-        "Name": "Id",
-        "Type": "System.Int32",
-        "IsRequired": false
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[SpecialBankAPI.WeatherForecast, SpecialBankAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
       }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
-    "Method": "GetByAccountNumber",
-    "RelativePath": "api/v3/Account/GetByAccountNumber",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "accountNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SpecialBankAPI.Controllers.AccountController",
-    "Method": "UpdateAccount",
-    "RelativePath": "api/v3/Account/UpdateAccount",
-    "HttpMethod": "PUT",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "updateAccountModel",
-        "Type": "SpecialBankAPI.Models.UpdateAccountModel",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SpecialBankAPI.Controllers.TransactionController",
-    "Method": "CreateNewTransaction",
-    "RelativePath": "api/v3/Transaction/Create",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "transactionRequest",
-        "Type": "SpecialBankAPI.Models.TransactionRequestDTO",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SpecialBankAPI.Controllers.TransactionController",
-    "Method": "MakeDeposit",
-    "RelativePath": "api/v3/Transaction/MakeDeposit",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "accountNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "amount",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "transactionPin",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SpecialBankAPI.Controllers.TransactionController",
-    "Method": "MakeFundsTransfer",
-    "RelativePath": "api/v3/Transaction/MakeFundsTransfer",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "fromAccount",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "toAccount",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "amount",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "transactionPin",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "SpecialBankAPI.Controllers.TransactionController",
-    "Method": "MakeWithDrawal",
-    "RelativePath": "api/v3/Transaction/MakeWithDrawal",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "accountNumber",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "amount",
-        "Type": "System.Decimal",
-        "IsRequired": false
-      },
-      {
-        "Name": "transactionPin",
-        "Type": "System.String",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
+    ]
   }
 ]
