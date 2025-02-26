@@ -169,4 +169,3 @@ C:\Users\pedro\OneDrive\Documentos\GitHub\special-bank-app\SpecialBankBackend\ob
 C:\Users\pedro\OneDrive\Documentos\GitHub\special-bank-app\SpecialBankBackend\obj\Debug\net8.0\SpecialBankAPI.genruntimeconfig.cache
 C:\Users\pedro\OneDrive\Documentos\GitHub\special-bank-app\SpecialBankBackend\obj\Debug\net8.0\ref\SpecialBankAPI.dll
 C:\Users\pedro\OneDrive\Documentos\GitHub\special-bank-app\SpecialBankBackend\bin\Debug\net8.0\appsettings.Local.json
-C:\Users\pedro\OneDrive\Documentos\GitHub\special-bank-app\SpecialBankBackend\bin\Debug\net8.0\Newtonsoft.Json.dll
