@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SpecialBankAPI.Data;
 using SpecialBankAPI.Models;
@@ -10,6 +11,7 @@ namespace SpecialBankAPI.Controllers
 {
     [ApiController]
     [Route("api/v3/[controller]")]
+    [Authorize]
     public class AccountController : ControllerBase
     {
         private IAccountService _accountService;

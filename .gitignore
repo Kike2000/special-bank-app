@@ -49,3 +49,4 @@ SpecialBankBackend/.vs/
 # Ignorar archivos de configuración específicos
 SpecialBankBackend/appsettings.Development.json
 SpecialBankBackend/appsettings.Local.json
+SpecialBankBackend/bin/Debug/net8.0/
